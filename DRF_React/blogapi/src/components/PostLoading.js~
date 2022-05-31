@@ -1,0 +1,13 @@
+import React from 'react';
+
+
+function PostLoading (Componen) {
+    return function PostLoadingComponent ({isLoading, ...props}) {
+	//!isLoading && (return <Component {...props}/>);
+	return (
+	    <p style={{ fontSize:'15px' }}>Data Loading...</p>
+	);	
+    };
+}
+
+export default PostLoading;
